@@ -7125,15 +7125,11 @@ label.panel-block {
   flex: 1; }
 
 .hero.is-fullheight-with-navbar-twice {
-  min-height: calc(100vh - 7.6rem); }
+  min-height: calc(100vh - 7.6rem);
+  padding-top: 4rem; }
 
 a.navbar-item {
   display: flex; }
-
-a.navbar-item,
-.navbar-link,
-.navbar-burger {
-  color: #b5b5b5; }
 
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-link:focus,
@@ -7145,9 +7141,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .has-navbar-height {
   min-height: 3.25rem; }
 
-.background-image-black-white-beach {
-  background-image: url("../img/black-white-beach.jpg");
+.has-background-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
+
+.background-image-black-white-beach {
+  background-image: url("../img/black-white-beach.jpg"); }
+
+.background-image-black-white-surfer {
+  background-image: url("../img/black-white-surfer.jpg"); }

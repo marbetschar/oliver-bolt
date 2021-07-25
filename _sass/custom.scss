@@ -32,10 +32,14 @@ a.navbar-item.is-active,
     background: none;
 }
 
+.navbar-menu.is-block {
+    background-color: #7d7d7d !important;
+    border-bottom: 1px solid #dbdbdb;
+}
+
 .has-navbar-height {
     min-height: 3.25rem;
 }
-
 
 .has-background-image {
     background-repeat: no-repeat;
@@ -44,10 +48,35 @@ a.navbar-item.is-active,
     background-size: cover;
 }
 
-.background-image-black-white-beach {
-    background-image: url('../img/black-white-beach.jpg');
+.background-image-black-white-two-surfers {
+    background-image: url('../img/black-white-two-surfers.jpg');
 }
 
 .background-image-black-white-surfer {
     background-image: url('../img/black-white-surfer.jpg');
+}
+
+.title:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+.about-portrait {
+    float: right;
+    margin: 1em;
+}
+
+dl.timeline {
+	display: grid;
+    grid-template: auto / 7em 1fr;
+}
+
+dl.timeline dt {
+    font-weight: bold;
+    grid-column: 1;
+    text-align: right;
+    padding-right: 1em;
+}
+
+dl.timeline dd {
+    grid-column: 2;
 }

@@ -37,6 +37,10 @@ a.navbar-item.is-active,
     border-bottom: 1px solid #dbdbdb;
 }
 
+.navbar-menu.is-block.has-background-black {
+    background-color: black !important;
+}
+
 .has-navbar-height {
     min-height: 3.25rem;
 }
@@ -79,4 +83,56 @@ dl.timeline dt {
 
 dl.timeline dd {
     grid-column: 2;
+}
+
+a.download {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+dl.meta {
+	display: grid;
+    grid-template: auto / 3em 1fr;
+}
+
+dl.meta dt {
+    grid-column: 1;
+    text-align: right;
+    padding-right: 1em;
+}
+
+dl.meta dd {
+    grid-column: 2;
+    color: #989898;
+}
+
+.hero-body.movies .card {
+    float: left;
+    max-width: 40%;
+    margin-right: 10em;
+    margin-bottom: 5em;
+    box-shadow: none;
+    min-width: 430px;
+}
+
+.hero-body.movies .card .title {
+    color: #989898;
+}
+
+.hero-body.movies .card .title small {
+    font-weight: normal;
+    font-size: 0.5em;
+}
+
+.hero-body.movies:after {
+    clear: both;
+}
+
+@media screen and (max-width: 667px) {
+    .hero-body.movies .card {
+        display: block;
+        float: none;
+        margin-right: 0;
+        max-width: inherit;
+    }
 }

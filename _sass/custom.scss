@@ -106,6 +106,24 @@ dl.meta dd {
     color: #989898;
 }
 
+.hero-body.movies > .title {
+    color: white;
+    text-transform: uppercase;
+    line-height: 0.8;
+    clear: both;
+    margin-top: 0;
+}
+
+.hero-body.movies > .subtitle {
+    color: white;
+    clear: both;
+}
+
+.hero-body.movies > .subtitle small {
+    padding-left: 1.5em;
+    font-size: 0.7em;
+}
+
 .hero-body.movies .card {
     float: left;
     max-width: 40%;
@@ -128,11 +146,44 @@ dl.meta dd {
     clear: both;
 }
 
+.image iframe.is-16by9 {
+    width: 560px;
+    height: 315px;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-body.movies .card {
+        margin-right: 2em;
+        margin-bottom: 3em;
+        max-width: inherit;
+    }
+
+    .image iframe.is-16by9 {
+        width: 448px;
+        height: 252px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image iframe.is-16by9 {
+        width: 560px;
+        height: 315px;
+    }
+}
+
 @media screen and (max-width: 667px) {
     .hero-body.movies .card {
         display: block;
         float: none;
         margin-right: 0;
+        margin-bottom: 3em;
         max-width: inherit;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .image iframe.is-16by9 {
+        width: 320px;
+        height: 180px;
     }
 }

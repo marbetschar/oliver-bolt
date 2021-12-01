@@ -207,6 +207,10 @@ dl.meta dd {
         width: 448px;
         height: 252px;
     }
+
+    .hero.is-navbar-aligned {
+        padding-left: $horizontal-inset;
+    }
 }
 
 @media screen and (max-width: 768px) {

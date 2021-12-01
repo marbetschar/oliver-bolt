@@ -7275,7 +7275,9 @@ dl.meta dd {
     max-width: inherit; }
   .image iframe.is-16by9 {
     width: 448px;
-    height: 252px; } }
+    height: 252px; }
+  .hero.is-navbar-aligned {
+    padding-left: 2%; } }
 
 @media screen and (max-width: 768px) {
   .image iframe.is-16by9 {

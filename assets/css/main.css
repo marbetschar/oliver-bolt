@@ -7139,6 +7139,12 @@ label.panel-block {
   right: 0;
   justify-content: space-between; }
 
+.navbar.is-fixed-bottom.has-background-black {
+  left: -2%;
+  right: -2%;
+  padding-left: 2%;
+  padding-right: 2%; }
+
 .navbar.is-absolute .navbar-end :first-child {
   margin-left: 0;
   padding-left: 0; }
@@ -7254,6 +7260,9 @@ dl.meta dd {
   box-shadow: none;
   min-width: 430px; }
 
+.hero-body.movies .card:nth-child(2n) {
+  margin-right: 0; }
+
 .hero-body.movies .card .title {
   color: #989898; }
 
@@ -7268,22 +7277,26 @@ dl.meta dd {
   width: 560px;
   height: 315px; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   .hero-body.movies .card {
     margin-right: 2em;
     margin-bottom: 3em;
     max-width: inherit; }
+  .hero-body.movies .card:nth-child(2n) {
+    margin-right: 0; }
   .image iframe.is-16by9 {
     width: 448px;
     height: 252px; }
   .hero.is-navbar-aligned {
     padding-left: 2%; } }
 
+/*
 @media screen and (max-width: 768px) {
-  .image iframe.is-16by9 {
-    width: 560px;
-    height: 315px; } }
-
+    .image iframe.is-16by9 {
+        width: 560px;
+        height: 315px;
+    }
+}*/
 @media screen and (max-width: 667px) {
   .hero-body.movies .card {
     display: block;

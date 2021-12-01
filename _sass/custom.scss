@@ -33,6 +33,13 @@ $navbar-offset: 50%;
     justify-content: space-between;
 }
 
+.navbar.is-fixed-bottom.has-background-black {
+    left: -$horizontal-inset;
+    right: -$horizontal-inset;
+    padding-left: $horizontal-inset;
+    padding-right: $horizontal-inset;
+}
+
 .navbar.is-absolute .navbar-end :first-child {
     margin-left: 0;
     padding-left: 0;
@@ -178,6 +185,10 @@ dl.meta dd {
     min-width: 430px;
 }
 
+.hero-body.movies .card:nth-child(2n) {
+    margin-right: 0;
+}
+
 .hero-body.movies .card .title {
     color: #989898;
 }
@@ -196,11 +207,15 @@ dl.meta dd {
     height: 315px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     .hero-body.movies .card {
         margin-right: 2em;
         margin-bottom: 3em;
         max-width: inherit;
+    }
+
+    .hero-body.movies .card:nth-child(2n) {
+        margin-right: 0;
     }
 
     .image iframe.is-16by9 {
@@ -212,13 +227,13 @@ dl.meta dd {
         padding-left: $horizontal-inset;
     }
 }
-
+/*
 @media screen and (max-width: 768px) {
     .image iframe.is-16by9 {
         width: 560px;
         height: 315px;
     }
-}
+}*/
 
 @media screen and (max-width: 667px) {
     .hero-body.movies .card {

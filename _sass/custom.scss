@@ -232,6 +232,14 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 }
 
 @media screen and (max-width: 1080px) {
+    .navbar.is-absolute .navbar-end {
+        position: inherit;
+    }
+
+    .navbar.is-absolute .navbar-end :first-child {
+        padding-left: 0.5em;
+    }
+
     .hero-body.movies .card {
         margin-right: 2em;
         margin-bottom: 3em;
@@ -254,6 +262,15 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 }
 
 @media screen and (max-width: 667px) {
+    ul.is-flex.is-flex-direction-row.is-justify-content-space-between {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+
+    ul.is-flex.is-flex-direction-row.is-justify-content-space-between li {
+        margin-bottom: 1em;
+    }
+
     .hero-body.movies .card {
         display: block;
         float: none;

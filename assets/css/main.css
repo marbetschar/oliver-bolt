@@ -7113,20 +7113,54 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.navbar {
+  margin-left: 2%;
+  margin-right: 2%; }
+
+.navbar .navbar-item:first-child {
+  padding-left: 0; }
+
+.navbar .navbar-item:last-child {
+  padding-right: 0; }
+
 .navbar.is-transparent,
 .navbar.is-transparent .navbar-menu {
   background: none; }
 
 .navbar.is-absolute {
   position: absolute;
-  width: 100%; }
+  left: 0;
+  right: 0; }
+
+.navbar.is-absolute .navbar-end {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  justify-content: space-between; }
+
+.navbar.is-absolute .navbar-end :first-child {
+  margin-left: 0;
+  padding-left: 0; }
 
 .navbar.is-flex .navbar-brand {
   flex: 1; }
 
 .hero.is-fullheight-with-navbar-twice {
   min-height: calc(100vh - 7.6rem);
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-left: 2%;
+  padding-right: 2%; }
+
+.hero.is-navbar-aligned {
+  padding-left: 50%; }
+
+.hero.is-navbar-aligned .hero-body {
+  padding-left: 0;
+  margin-left: 0; }
+
+.hero-body.movies {
+  padding-left: 0; }
 
 a.navbar-item {
   display: flex; }

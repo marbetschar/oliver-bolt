@@ -1,3 +1,19 @@
+$horizontal-inset: 2%;
+$navbar-offset: 50%;
+
+.navbar {
+    margin-left: $horizontal-inset;
+    margin-right: $horizontal-inset;
+}
+
+.navbar .navbar-item:first-child {
+    padding-left: 0;
+}
+
+.navbar .navbar-item:last-child {
+    padding-right: 0;
+}
+
 .navbar.is-transparent,
 .navbar.is-transparent .navbar-menu {
     background: none;
@@ -5,7 +21,21 @@
 
 .navbar.is-absolute {
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.navbar.is-absolute .navbar-end {
+    position: absolute;
+    bottom: 0;
+    left: $navbar-offset;
+    right: 0;
+    justify-content: space-between;
+}
+
+.navbar.is-absolute .navbar-end :first-child {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .navbar.is-flex .navbar-brand {
@@ -15,6 +45,21 @@
 .hero.is-fullheight-with-navbar-twice {
     min-height: calc(100vh - 7.6rem);
     padding-top: 4rem;
+    padding-left: $horizontal-inset;
+    padding-right: $horizontal-inset;
+}
+
+.hero.is-navbar-aligned {
+    padding-left: $navbar-offset;
+}
+
+.hero.is-navbar-aligned .hero-body {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.hero-body.movies {
+    padding-left: 0;
 }
 
 a.navbar-item {

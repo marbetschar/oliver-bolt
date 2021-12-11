@@ -7366,6 +7366,12 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
   .image iframe.is-16by9 {
     width: 448px;
     height: 252px; }
+  .hero-body.movies .card .media-content h4 {
+    font-size: 22px; }
+  .hero-body.movies .card .media-content h4 small {
+    font-size: 8px; }
+  .hero-body.movies .card .media-content h5 {
+    font-size: 12px; }
   .hero.is-navbar-aligned {
     padding-left: 5%;
     padding-right: 5%; } }
@@ -7383,7 +7389,13 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
     margin-bottom: 3em;
     max-width: inherit; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
+  .hero-body.movies .card .media-content h4 {
+    font-size: 18px; }
+  .hero-body.movies .card .media-content h4 small {
+    font-size: 6px; }
+  .hero-body.movies .card .media-content h5 {
+    font-size: 12px; }
   .image iframe.is-16by9 {
     width: 320px;
     height: 180px; } }

@@ -18,17 +18,6 @@ i.space{
     margin-right: $horizontal-inset;
 }
 
-.navbar.is-fixed-bottom.is-absolute-fixed-bottom {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: $horizontal-inset;
-    padding-right: $horizontal-inset;
-}
-
 .navbar.has-background-black {
     height: 118px;
     position: relative;
@@ -323,10 +312,6 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 }
 
 @media screen and (max-width: 1080px) {
-    .navbar.is-fixed-bottom.is-absolute-fixed-bottom {
-        position: relative;
-    }
-
     .navbar.is-absolute .navbar-end {
         position: inherit;
     }

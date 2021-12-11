@@ -265,6 +265,7 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .hero-body.movies .card .media-content h4 small {
@@ -276,6 +277,7 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
     margin-top: 0;
     font-size: 20px;
     font-weight: lighter;
+    white-space: nowrap;
 }
 
 .hero-body.movies .card .card-content {

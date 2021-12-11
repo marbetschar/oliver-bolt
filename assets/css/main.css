@@ -7323,7 +7323,8 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 .hero-body.movies .card .media-content h4 {
   font-size: 30px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  white-space: nowrap; }
 
 .hero-body.movies .card .media-content h4 small {
   font-size: 11px;
@@ -7332,7 +7333,8 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 .hero-body.movies .card .media-content h5 {
   margin-top: 0;
   font-size: 20px;
-  font-weight: lighter; }
+  font-weight: lighter;
+  white-space: nowrap; }
 
 .hero-body.movies .card .card-content {
   padding-left: 0; }

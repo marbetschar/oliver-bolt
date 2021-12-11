@@ -117,7 +117,8 @@ a.navbar-item {
     padding-bottom: 1em;
 }
 
-a.navbar-item:hover {
+a.navbar-item:hover,
+a.navbar-item.is-active {
     font-weight: normal;
 }
 

@@ -7206,7 +7206,8 @@ a.navbar-item {
   font-weight: 300;
   padding-bottom: 1em; }
 
-a.navbar-item:hover {
+a.navbar-item:hover,
+a.navbar-item.is-active {
   font-weight: normal; }
 
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active,

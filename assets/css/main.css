@@ -7122,6 +7122,9 @@ i.space {
   margin-left: 0.4em;
   margin-right: 0.4em; }
 
+p.is-intro-text {
+  font-size: 20px; }
+
 .navbar {
   margin-left: 5%;
   margin-right: 5%; }
@@ -7248,7 +7251,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .title.is-about {
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: 900; }
 
 .about-portrait {
   float: right;
@@ -7273,9 +7276,11 @@ dl.timeline dd {
 .is-light {
   font-weight: 300; }
 
-a.bold {
-  text-decoration: underline;
-  font-weight: bold; }
+a.link {
+  text-decoration: underline; }
+
+a.link:hover {
+  color: lightgray; }
 
 dl.meta {
   display: inline; }

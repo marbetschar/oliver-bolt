@@ -13,6 +13,10 @@ i.space{
     margin-right: 0.4em;
 }
 
+p.is-intro-text {
+    font-size: 20px;
+}
+
 .navbar {
     margin-left: $horizontal-inset;
     margin-right: $horizontal-inset;
@@ -172,7 +176,7 @@ a.navbar-item.is-active,
 
 .title.is-about {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .about-portrait {
@@ -203,9 +207,12 @@ dl.timeline dd {
     font-weight: 300;
 }
 
-a.bold {
+a.link {
     text-decoration: underline;
-    font-weight: bold;
+}
+
+a.link:hover {
+    color: lightgray;
 }
 
 dl.meta {

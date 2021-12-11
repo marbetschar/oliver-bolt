@@ -7119,8 +7119,8 @@ html, body {
 
 i.space {
   font-style: normal;
-  margin-left: 0.5em;
-  margin-right: 0.5em; }
+  margin-left: 0.4em;
+  margin-right: 0.4em; }
 
 .navbar {
   margin-left: 5%;
@@ -7243,7 +7243,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   background-image: url("../img/black-white-surfer-blurred.jpg"); }
 
 .title:not(:first-child) {
-  margin-top: 1.5rem; }
+  margin-top: 1.5em;
+  margin-bottom: 0.5em; }
+
+.title.is-about {
+  font-size: 20px;
+  font-weight: bold; }
 
 .about-portrait {
   float: right;

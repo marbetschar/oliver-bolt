@@ -7,19 +7,29 @@ html, body {
 $horizontal-inset: 5%;
 $navbar-offset: 45%;
 
+i.space{
+    font-style: normal;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 .navbar {
     margin-left: $horizontal-inset;
     margin-right: $horizontal-inset;
 }
 
+.navbar.has-background-black {
+    height: 118px;
+    position: relative;
+}
+
 .navbar .navbar-brand .navbar-item {
     padding-bottom: 0;
-    padding-top: 2em;
 }
 
 .navbar.is-transparent .navbar-brand .navbar-item {
-    
     padding-top: 0;
+    padding-bottom: 1em;
 }
 
 .navbar .navbar-item:first-child {
@@ -30,13 +40,18 @@ $navbar-offset: 45%;
     padding-right: 0;
 }
 
+.navbar.has-background-black .navbar-brand a {
+    position: absolute;
+    bottom: 2px;
+}
+
 .navbar.has-background-black h1.title {
     font-weight: bold;
     font-size: 34pt;
 }
 
 .navbar.is-transparent h2.subtitle {
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 21pt;
 }
 
@@ -53,17 +68,15 @@ $navbar-offset: 45%;
 
 .navbar.is-absolute .navbar-end {
     position: absolute;
+    top: 0;
     bottom: 0;
     left: $navbar-offset;
     right: 0;
     justify-content: space-between;
 }
 
-.navbar.is-fixed-bottom.has-background-black {
-    left: -$horizontal-inset;
-    right: -$horizontal-inset;
-    padding-left: $horizontal-inset;
-    padding-right: $horizontal-inset;
+.navbar.is-absolute .navbar-end .navbar-item {
+    padding-top: 0;
 }
 
 .navbar.is-absolute .navbar-end :first-child {
@@ -76,7 +89,7 @@ $navbar-offset: 45%;
 }
 
 .hero.is-fullheight-with-navbar-twice {
-    min-height: calc(100vh - 7.6rem);
+    min-height: calc(100vh - 236px);
     padding-top: 4rem;
     padding-left: $horizontal-inset;
     padding-right: $horizontal-inset;
@@ -99,6 +112,13 @@ $navbar-offset: 45%;
 
 a.navbar-item {
     display: flex;
+    font-size: 21pt;
+    font-weight: 300;
+    padding-bottom: 1em;
+}
+
+a.navbar-item:hover {
+    font-weight: normal;
 }
 
 a.navbar-item:focus,
@@ -244,10 +264,12 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 .hero-body.movies .card .media-content h4 {
     font-size: 30px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .hero-body.movies .card .media-content h4 small {
     font-size: 11px;
+    text-transform: none;
 }
 
 .hero-body.movies .card .media-content h5 {

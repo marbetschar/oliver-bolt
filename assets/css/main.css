@@ -7117,16 +7117,25 @@ label.panel-block {
 html, body {
   font-family: 'Roboto', sans-serif; }
 
+i.space {
+  font-style: normal;
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
+
 .navbar {
   margin-left: 5%;
   margin-right: 5%; }
 
+.navbar.has-background-black {
+  height: 118px;
+  position: relative; }
+
 .navbar .navbar-brand .navbar-item {
-  padding-bottom: 0;
-  padding-top: 2em; }
+  padding-bottom: 0; }
 
 .navbar.is-transparent .navbar-brand .navbar-item {
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 1em; }
 
 .navbar .navbar-item:first-child {
   padding-left: 0; }
@@ -7134,12 +7143,16 @@ html, body {
 .navbar .navbar-item:last-child {
   padding-right: 0; }
 
+.navbar.has-background-black .navbar-brand a {
+  position: absolute;
+  bottom: 2px; }
+
 .navbar.has-background-black h1.title {
   font-weight: bold;
   font-size: 34pt; }
 
 .navbar.is-transparent h2.subtitle {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 21pt; }
 
 .navbar.is-transparent,
@@ -7153,16 +7166,14 @@ html, body {
 
 .navbar.is-absolute .navbar-end {
   position: absolute;
+  top: 0;
   bottom: 0;
   left: 45%;
   right: 0;
   justify-content: space-between; }
 
-.navbar.is-fixed-bottom.has-background-black {
-  left: -5%;
-  right: -5%;
-  padding-left: 5%;
-  padding-right: 5%; }
+.navbar.is-absolute .navbar-end .navbar-item {
+  padding-top: 0; }
 
 .navbar.is-absolute .navbar-end :first-child {
   margin-left: 0;
@@ -7172,7 +7183,7 @@ html, body {
   flex: 1; }
 
 .hero.is-fullheight-with-navbar-twice {
-  min-height: calc(100vh - 7.6rem);
+  min-height: calc(100vh - 236px);
   padding-top: 4rem;
   padding-left: 5%;
   padding-right: 5%; }
@@ -7190,7 +7201,13 @@ html, body {
   padding-left: 0; }
 
 a.navbar-item {
-  display: flex; }
+  display: flex;
+  font-size: 21pt;
+  font-weight: 300;
+  padding-bottom: 1em; }
+
+a.navbar-item:hover {
+  font-weight: normal; }
 
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-link:focus,
@@ -7305,10 +7322,12 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 
 .hero-body.movies .card .media-content h4 {
   font-size: 30px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .hero-body.movies .card .media-content h4 small {
-  font-size: 11px; }
+  font-size: 11px;
+  text-transform: none; }
 
 .hero-body.movies .card .media-content h5 {
   margin-top: 0;

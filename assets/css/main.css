@@ -7126,6 +7126,16 @@ i.space {
   margin-left: 5%;
   margin-right: 5%; }
 
+.navbar.is-fixed-bottom.is-absolute-fixed-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5%;
+  padding-right: 5%; }
+
 .navbar.has-background-black {
   height: 118px;
   position: relative; }
@@ -7362,6 +7372,8 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
   height: 315px; }
 
 @media screen and (max-width: 1080px) {
+  .navbar.is-fixed-bottom.is-absolute-fixed-bottom {
+    position: relative; }
   .navbar.is-absolute .navbar-end {
     position: inherit; }
   .navbar.is-absolute .navbar-end :first-child {

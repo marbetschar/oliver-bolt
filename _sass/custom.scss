@@ -208,11 +208,13 @@ dl.meta {
 }
 
 dl.meta dt {
+    clear: both;
     float: left;
-    margin-right: 0.5em;
 }
 
 dl.meta dd {
+    float: left;
+    margin-left: 0.5em;
     color: #989898;
 }
 
@@ -257,7 +259,6 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
     margin-right: 10em;
     margin-bottom: 5em;
     box-shadow: none;
-    min-width: 430px;
 }
 
 .hero-body.movies .card:nth-child(2n) {

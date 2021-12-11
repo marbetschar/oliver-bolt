@@ -7266,11 +7266,15 @@ dl.timeline dt {
   padding-right: 1em; }
 
 dl.timeline dd {
-  grid-column: 2; }
+  grid-column: 2;
+  margin-bottom: 0.5em; }
 
 a.bold {
   text-decoration: underline;
   font-weight: bold; }
+
+dl.meta {
+  display: inline; }
 
 dl.meta dt {
   float: left;

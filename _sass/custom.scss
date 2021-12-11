@@ -12,6 +12,16 @@ $navbar-offset: 45%;
     margin-right: $horizontal-inset;
 }
 
+.navbar .navbar-brand .navbar-item {
+    padding-bottom: 0;
+    padding-top: 2em;
+}
+
+.navbar.is-transparent .navbar-brand .navbar-item {
+    
+    padding-top: 0;
+}
+
 .navbar .navbar-item:first-child {
     padding-left: 0;
 }
@@ -21,10 +31,12 @@ $navbar-offset: 45%;
 }
 
 .navbar.has-background-black h1.title {
+    font-weight: bold;
     font-size: 34pt;
 }
 
 .navbar.is-transparent h2.subtitle {
+    font-weight: lighter;
     font-size: 21pt;
 }
 
@@ -163,19 +175,12 @@ a.bold {
     font-weight: bold;
 }
 
-dl.meta {
-	display: grid;
-    grid-template: auto / 3em 1fr;
-}
-
 dl.meta dt {
-    grid-column: 1;
-    text-align: right;
-    padding-right: 1em;
+    float: left;
+    margin-right: 0.5em;
 }
 
 dl.meta dd {
-    grid-column: 2;
     color: #989898;
 }
 
@@ -234,6 +239,25 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 .hero-body.movies .card .title small {
     font-weight: normal;
     font-size: 0.5em;
+}
+
+.hero-body.movies .card .media-content h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero-body.movies .card .media-content h4 small {
+    font-size: 11px;
+}
+
+.hero-body.movies .card .media-content h5 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.hero-body.movies .card .card-content {
+    padding-left: 0;
 }
 
 .hero-body.movies:after {

@@ -1,26 +1,45 @@
+//import lightGallery from 'lightgallery';
+
+// Plugins
+//import lgThumbnail from 'lightgallery/plugins/thumbnail';
+//import lgZoom from 'lightgallery/plugins/zoom';
+
 const init = {
   navbarBurgers: () => {
-      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('a.navbar-burger'), 0);
-      if (navbarBurgers.length > 0) {
-        navbarBurgers.forEach(navbarBurger => {
-          navbarBurger.addEventListener('click', e => {
-            let eventTarget = e.target;
-            if (eventTarget.tagName.toLowerCase() != 'a') {
-              eventTarget = e.target.parentElement;
-            }
-            const navbarTarget = document.getElementById(eventTarget.dataset.target);
+    var navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('a.navbar-burger'), 0);
+    if (navbarBurgers.length > 0) {
+      navbarBurgers.forEach(function (navbarBurger) {
+        navbarBurger.addEventListener('click', function (e) {
+          var eventTarget = e.target;
+          if (eventTarget.tagName.toLowerCase() != 'a') {
+            eventTarget = e.target.parentElement;
+          }
+          var navbarTarget = document.getElementById(eventTarget.dataset.target);
 
-            if (navbarTarget) {
-              navbarBurger.classList.toggle('is-active');
-              navbarTarget.classList.toggle('is-hidden-touch');
-              navbarTarget.classList.toggle('is-block');
-            }
-          });
+          if (navbarTarget) {
+            navbarBurger.classList.toggle('is-active');
+            navbarTarget.classList.toggle('is-hidden-touch');
+            navbarTarget.classList.toggle('is-block');
+          }
         });
-      }
+      });
+    }
+  },
+
+  gallery: (element) => {
+    lightGallery(element, {
+      plugins: [lgZoom, lgThumbnail],
+      licenseKey: '0000-0000-000-0000',
+      speed: 500
+  });
   }
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   init.navbarBurgers();
+
+  const galleryElement = document.getElementById('lightgallery');
+  if (galleryElement) {
+    init.gallery(galleryElement);
+  }
 });

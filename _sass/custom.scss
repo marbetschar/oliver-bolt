@@ -1,3 +1,9 @@
+// Font Awesome
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+$fa-font-path: "../assets/webfonts";
+
+// Custom Styles
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html, body {
@@ -213,6 +219,23 @@ a.link {
 
 a.link:hover {
     color: lightgray;
+}
+
+ul.social {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+ul.social li {
+    margin-bottom: 0.5em;
+}
+
+ul.social a {
+    font-size: 20px;
+}
+
+ul.social a span.icon {
+    display: inline;
 }
 
 dl.meta {

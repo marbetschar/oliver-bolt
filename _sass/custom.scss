@@ -1,5 +1,6 @@
 // Font Awesome
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 $fa-font-path: "../assets/webfonts";
 
@@ -236,6 +237,7 @@ ul.social a {
 
 ul.social a span.icon {
     display: inline;
+    margin-right: 0.3em;
 }
 
 dl.meta {

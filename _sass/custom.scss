@@ -12,7 +12,8 @@ html, body {
 }
 
 $horizontal-inset: 5%;
-$navbar-offset: 45%;
+$navbar-offset: 44.5%;
+$content-offset: 45%;
 
 i.space{
     font-style: normal;
@@ -107,7 +108,7 @@ p.is-intro-text {
 }
 
 .hero.is-navbar-aligned {
-    padding-left: $navbar-offset;
+    padding-left: $content-offset;
 }
 
 .hero.is-navbar-aligned .hero-body {

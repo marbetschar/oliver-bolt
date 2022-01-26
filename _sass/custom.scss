@@ -14,6 +14,57 @@ html, body {
 $horizontal-inset: 5%;
 $navbar-offset: 44.5%;
 $content-offset: 45%;
+$content-width: 55%;
+$gallery-offset: 44.7%;
+$gallery-width: 55.3%;
+
+.gallery-offset-width {
+    width: $gallery-offset;
+}
+
+.gallery-width {
+    width: $gallery-width;
+}
+
+.gallery-inline > a {
+    display: none;
+}
+
+.gallery-inline .lg-inline #lg-toolbar-1 * {
+    color: white;
+}
+
+#inline-lightgallery .lg-sub-html,
+#lightgallery .lg-sub-html {
+    color:#0a0a0a;
+}
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+    border-color: #0a0a0a !important;
+}
+
+.gallery-inline .lg-inline #lg-backdrop-1,
+.gallery-inline .lg-inline #lg-components-1 > * {
+    background-color: inherit;
+}
+
+ul.gallery-nav a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+ul.gallery-nav a:hover,
+ul.gallery-nav .is-active a {
+    font-weight: normal;
+    color: white;
+}
+
+.has-no-horizontal-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 i.space{
     font-style: normal;
@@ -116,6 +167,21 @@ p.is-intro-text {
     margin-left: 0;
     padding-right: 0;
     margin-right: 0;
+}
+
+.hero .hero-head.is-navbar-aligned {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: $horizontal-inset;
+}
+
+.hero .hero-body.is-navbar-aligned {
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    width: $content-width;
 }
 
 .hero-body.movies {
@@ -383,6 +449,22 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
     .hero.is-navbar-aligned {
         padding-left: $horizontal-inset;
         padding-right: $horizontal-inset;
+    }
+
+    .hero-body.has-no-horizontal-padding {
+        flex-direction: column;
+    }
+
+    .gallery-nav.gallery-offset,
+    #lightgallery,
+    #inline-lightgallery {
+        width: auto;
+    }
+
+    #lightgallery,
+    #inline-lightgallery {
+        margin-top: 1em;
+        min-height: 600px;
     }
 }
 

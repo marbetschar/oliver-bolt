@@ -1,9 +1,3 @@
-//import lightGallery from 'lightgallery';
-
-// Plugins
-//import lgThumbnail from 'lightgallery/plugins/thumbnail';
-//import lgZoom from 'lightgallery/plugins/zoom';
-
 const init = {
   navbarBurgers: () => {
     var navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('a.navbar-burger'), 0);
@@ -28,9 +22,13 @@ const init = {
 
   gallery: (element) => {
     lightGallery(element, {
-      plugins: [lgZoom, lgThumbnail],
+      plugins: [
+        lgZoom,
+        lgThumbnail
+      ],
       licenseKey: '0000-0000-000-0000',
-      speed: 500
+      speed: 500,
+      thumbnail: true
   });
   }
 };

@@ -22,14 +22,30 @@ const init = {
 
   gallery: (element) => {
     lightGallery(element, {
-      plugins: [
-        lgZoom,
-        lgThumbnail
-      ],
+        plugins: [
+          lgThumbnail
+        ],
+        licenseKey: '0000-0000-000-0000',
+        speed: 500,
+        thumbnail: true
+    });
+  },
+  inlineGallery: function(element, items) {
+    const inlineGallery = lightGallery(element, {
+      container: element,
+      dynamic: true,
+      hash: false,
+      closable: false,
+      showMaximizeIcon: true,
+      appendSubHtmlTo: '.lg-item',
+      slideDelay: 300,
+      plugins: [lgThumbnail],
       licenseKey: '0000-0000-000-0000',
       speed: 500,
-      thumbnail: true
-  });
+      dynamicEl: items
+    });
+
+    inlineGallery.openGallery();
   }
 };
 
@@ -39,5 +55,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryElement = document.getElementById('lightgallery');
   if (galleryElement) {
     init.gallery(galleryElement);
+  }
+
+  const inlineGalleryElement = document.getElementById('inline-lightgallery');
+  if (inlineGalleryElement) {
+    const items = [];
+
+    for(let anchor of inlineGalleryElement.children) {
+      const img = anchor.children[0];
+      const item = {
+        src: anchor['href'],
+        thumb: img['src'],
+        subHtml: img['alt'] ? '<h4>' + img['alt'] + '</h4>' : ''
+      };
+
+      items.push(item);
+    }
+
+    while(inlineGalleryElement.firstChild) {
+      inlineGalleryElement.removeChild(inlineGalleryElement.firstChild);
+    }
+    
+
+    init.inlineGallery(inlineGalleryElement, items);
   }
 });

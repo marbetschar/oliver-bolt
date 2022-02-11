@@ -23,7 +23,7 @@ $gallery-width: 55.3%;
 }
 
 .gallery-width {
-    width: $gallery-width;
+    width: $gallery-width !important;
 }
 
 .gallery-inline > a {

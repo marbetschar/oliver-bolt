@@ -11721,7 +11721,7 @@ html, body {
   width: 44.7%; }
 
 .gallery-width {
-  width: 55.3%; }
+  width: 55.3% !important; }
 
 .gallery-inline > a {
   display: none; }

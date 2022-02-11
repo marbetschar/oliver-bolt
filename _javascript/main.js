@@ -21,14 +21,21 @@ const init = {
   },
 
   gallery: (element) => {
-    lightGallery(element, {
-        plugins: [
-          lgThumbnail
-        ],
-        licenseKey: '0000-0000-000-0000',
-        speed: 500,
-        thumbnail: true
-    });
+    jQuery(element).justifiedGallery({
+      captions: false,
+      lastRow: "hide",
+      rowHeight: 180,
+      margins: 5
+    }).on('jg.complete', () => {
+      lightGallery(element, {
+          plugins: [
+            lgThumbnail
+          ],
+          licenseKey: '0000-0000-000-0000',
+          speed: 500,
+          thumbnail: true
+      })
+    })
   },
   inlineGallery: function(element, items) {
     const inlineGallery = lightGallery(element, {

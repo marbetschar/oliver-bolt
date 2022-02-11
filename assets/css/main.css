@@ -12063,7 +12063,9 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
   #lightgallery,
   #inline-lightgallery {
     margin-top: 1em;
-    min-height: 600px; } }
+    min-height: 600px; }
+  .gallery-width {
+      width: 100% !important; } }
 
 @media screen and (max-width: 667px) {
   ul.is-flex.is-flex-direction-row.is-justify-content-space-between {

@@ -18,6 +18,16 @@ $content-width: 55%;
 $gallery-offset: 44.7%;
 $gallery-width: 55.3%;
 
+.hero-head.is-brand-aligned {
+    position: absolute;
+    left: $horizontal-inset;
+    margin-top: 3rem;
+}
+
+.hero-head.is-brand-aligned > * {
+    width: 420px;
+}
+
 .navbar .navbar-menu {
     box-shadow: none;
 }
@@ -420,6 +430,15 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 }
 
 @media screen and (max-width: 1080px) {
+    .hero-head.is-brand-aligned {
+        position: inherit;
+        left: inherit;
+    }
+    
+    .hero-head.is-brand-aligned > * {
+        max-height: 320px;
+    }
+
     .navbar.is-absolute .navbar-end {
         position: inherit;
     }

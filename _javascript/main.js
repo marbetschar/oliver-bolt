@@ -25,7 +25,8 @@ const init = {
       captions: false,
       lastRow: "hide",
       rowHeight: 180,
-      margins: 5
+      margins: 5,
+      maxRowsCount: window.matchMedia && window.matchMedia('(max-width: 390px)').matches ? 6 : 3
     }).on('jg.complete', () => {
       lightGallery(element, {
           plugins: [

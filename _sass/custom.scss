@@ -18,6 +18,10 @@ $content-width: 55%;
 $gallery-offset: 44.7%;
 $gallery-width: 55.3%;
 
+.navbar .navbar-menu {
+    box-shadow: none;
+}
+
 .gallery-offset-width {
     width: $gallery-offset;
 }
@@ -39,9 +43,13 @@ $gallery-width: 55.3%;
     color:#0a0a0a;
 }
 
+.lg-outer .lg-thumb-item {
+    border-color: #0a0a0a !important;
+}
+
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
-    border-color: #0a0a0a !important;
+    border-color: white !important;
 }
 
 .gallery-inline .lg-inline #lg-backdrop-1,
@@ -399,6 +407,7 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
 
 .hero-body.movies .card .card-content {
     padding-left: 0;
+    padding-right: 0;
 }
 
 .hero-body.movies:after {
@@ -502,6 +511,7 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
     
     .hero-body.movies .card .media-content h5 {
         font-size: 12px;
+        white-space: normal;
     }
 
     .image iframe.is-16by9 {

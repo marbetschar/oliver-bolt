@@ -424,6 +424,10 @@ ul.is-flex.is-flex-direction-row.is-justify-content-space-between li:last-child 
     clear: both;
 }
 
+.card-image .image {
+    max-width: 100%;
+}
+
 .image iframe.is-16by9 {
     width: 560px;
     height: 315px;

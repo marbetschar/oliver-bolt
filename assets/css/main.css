@@ -11966,11 +11966,10 @@ dl.meta {
 
 dl.meta dt {
   clear: both;
-  float: left; }
+  float: left;
+  margin-right: 0.5em; }
 
 dl.meta dd {
-  float: left;
-  margin-left: 0.5em;
   color: #989898; }
 
 ul.is-flex.is-flex-direction-row.is-justify-content-space-between li {

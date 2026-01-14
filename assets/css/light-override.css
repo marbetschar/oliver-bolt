@@ -153,3 +153,37 @@ body {
   padding-bottom: 4rem;
 }
 
+/* ===============================
+   FIXED BOTTOM NAVBAR: Linie oben wirklich killen
+   =============================== */
+
+/* Exakt dein Element */
+body > nav.navbar.has-background-black.is-fixed-bottom {
+  border-top: 0 !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  outline: 0 !important;
+}
+
+/* Häufig sitzt die Linie auf inneren Containern */
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-brand,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-menu,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-start,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-end,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-item,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-link {
+  border-top: 0 !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* Falls die Linie als Pseudo-Element kommt */
+body > nav.navbar.has-background-black.is-fixed-bottom::before,
+body > nav.navbar.has-background-black.is-fixed-bottom::after,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-menu::before,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-menu::after,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-brand::before,
+body > nav.navbar.has-background-black.is-fixed-bottom .navbar-brand::after {
+  content: none !important;
+  display: none !important;
+}

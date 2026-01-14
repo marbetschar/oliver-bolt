@@ -148,3 +148,8 @@ nav.navbar.is-fixed-bottom::after {
   border: none !important;
 }
 
+/* Platz für fixe Navbar, verhindert optische Kanten/Überlagerungen */
+body {
+  padding-bottom: 4rem;
+}
+

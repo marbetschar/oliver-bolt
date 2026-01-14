@@ -232,5 +232,10 @@ body > nav.navbar.has-background-black.is-fixed-bottom .navbar-menu::after {
 .card-image {
   background-color: #ffffff !important;
 }
+/* nur Filme-Seite */
+.movies .card-image,
+.movies-page .card-image {
+  background-color: #ffffff !important;
+}
 
 

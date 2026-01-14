@@ -92,3 +92,9 @@ a {
   border-top: 1px solid #e6e6e6; /* optional, damit es sauber aussieht */
 }
 
+/* Filme-Seite: schwarzer Hero-Hintergrund -> weiß */
+section.hero.has-background-black {
+  background-color: #ffffff !important;
+}
+
+

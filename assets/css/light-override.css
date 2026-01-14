@@ -1,36 +1,25 @@
 /* ===============================
-   LIGHT MODE – FOR DUMMIES
+   LIGHT MODE – MINIMAL (SAFE)
+   Ziel: Seite hell, Design nicht zerstören
    =============================== */
 
-/* 1. Ganze Seite weiß + Text schwarz */
+/* 1) Nur die Grundfläche der Seite */
 html, body {
   background-color: #ffffff !important;
-  color: #000000 !important;
+  color: #111111 !important;
 }
 
-/* 2. ALLE Texte schwarz */
-h1, h2, h3, h4, h5, h6,
-p, span, li, a, strong, em, small,
-label, blockquote, figcaption {
-  color: #000000 !important;
+/* 2) Typo: nur Standardtexte – nicht jedes span/div */
+body, p, li, dt, dd, blockquote, figcaption {
+  color: #111111 !important;
 }
 
-/* 3. ALLE Bereiche weiß (Header, Sections, Footer, etc.) */
-header, footer, main, section, article, nav, div {
-  background-color: #ffffff !important;
+/* 3) Überschriften */
+h1, h2, h3, h4, h5, h6 {
+  color: #111111 !important;
 }
 
-/* 4. Links normal blau (nicht Dark-Mode-blass) */
+/* 4) Links dezent (optional) */
 a {
-  color: #0033cc !important;
+  color: #0b57d0;
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* 5. Linien & Rahmen sichtbar machen */
-hr {
-  border-color: #dddddd !important;
-}
-

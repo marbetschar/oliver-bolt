@@ -432,3 +432,84 @@ img {
   nav.navbar *::after {
     content: none !important;
 
+     /* =========================================================
+   MOBILE FIX (<=768px) – FINAL HARD OVERRIDE
+   Ziel: Kein Schwarz im Menü, kein Balken über Social Icons
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* 1) Bottom Navbar & ihr direkter Wrapper: komplett hell + keine Linien */
+  body > nav.navbar.is-fixed-bottom,
+  body > nav.navbar.is-fixed-bottom > div,
+  body > nav.navbar.is-fixed-bottom > div * {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    outline: 0 !important;
+  }
+
+  /* 2) Pseudo-Elemente killen (häufiger Grund für 1px Balken) */
+  body > nav.navbar.is-fixed-bottom::before,
+  body > nav.navbar.is-fixed-bottom::after,
+  body > nav.navbar.is-fixed-bottom > div::before,
+  body > nav.navbar.is-fixed-bottom > div::after,
+  body > nav.navbar.is-fixed-bottom *::before,
+  body > nav.navbar.is-fixed-bottom *::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* 3) Mobile Menü: speziell der "is-active" Zustand ist oft schwarz */
+  body nav.navbar .navbar-menu,
+  body nav.navbar .navbar-menu.is-active,
+  body nav.navbar .navbar-dropdown {
+    background-color: #ffffff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background-image: none !important;
+  }
+
+  /* 4) Alle Navbar-Bereiche, die gerne separat dunkel sind */
+  body nav.navbar .navbar-brand,
+  body nav.navbar .navbar-start,
+  body nav.navbar .navbar-end,
+  body nav.navbar .navbar-item,
+  body nav.navbar .navbar-link,
+  body nav.navbar .container {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 5) Links/Icons in Navbar: schwarz */
+  body nav.navbar a,
+  body nav.navbar .icon,
+  body nav.navbar .navbar-item a {
+    color: #111111 !important;
+  }
+
+  /* 6) Burger Icon (sonst unsichtbar) */
+  body nav.navbar .navbar-burger span {
+    background-color: #111111 !important;
+  }
+
+  /* 7) Social-Icon-Block: falls er eigene Klassen hat, ebenfalls entlinien */
+  body .social,
+  body .social-icons,
+  body .icons,
+  body .icon-bar {
+    background: transparent !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    background-image: none !important;
+  }
+}
+
+

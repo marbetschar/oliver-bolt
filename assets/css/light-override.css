@@ -512,4 +512,12 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  body { padding-bottom: 4.5rem; } /* Platz für Bottom-Navbar */
+  body > section:last-of-type,
+  body > main:last-of-type {
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+}
 

@@ -23,3 +23,60 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #0b57d0;
 }
+
+/* ===============================
+   BULMA DARK HELPERS -> LIGHT
+   (gezielt, ohne Layout zu zerstören)
+   =============================== */
+
+/* Schwarze/dunkle Hintergrund-Helfer auf Weiß drehen */
+.has-background-black,
+.has-background-dark {
+  background-color: #ffffff !important;
+}
+
+/* Weiße/helle Text-Helfer auf Dunkel drehen */
+.has-text-white,
+.has-text-light,
+.has-text-grey-lighter,
+.has-text-grey-light {
+  color: #111111 !important;
+}
+
+/* ===============================
+   NAVBAR FIX (du hattest: .navbar.has-background-black)
+   =============================== */
+
+.navbar.has-background-black {
+  background-color: #ffffff !important;
+}
+
+/* Navbar-Links lesbar machen */
+.navbar.has-background-black .navbar-item,
+.navbar.has-background-black .navbar-link {
+  color: #111111 !important;
+}
+
+/* Hover/Active State */
+.navbar.has-background-black .navbar-item:hover,
+.navbar.has-background-black .navbar-link:hover,
+.navbar.has-background-black .navbar-item.is-active,
+.navbar.has-background-black .navbar-link.is-active {
+  background-color: #f2f2f2 !important;
+  color: #111111 !important;
+}
+
+/* Burger Icon (Mobile) */
+.navbar.has-background-black .navbar-burger span {
+  background-color: #111111 !important;
+}
+
+/* Dropdown (falls vorhanden) */
+.navbar.has-background-black .navbar-dropdown {
+  background-color: #ffffff !important;
+  border: 1px solid #e6e6e6 !important;
+}
+
+.navbar.has-background-black .navbar-dropdown .navbar-item {
+  color: #111111 !important;
+}

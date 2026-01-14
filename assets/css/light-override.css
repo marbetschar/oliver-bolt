@@ -124,3 +124,8 @@ section.hero.has-background-black .hero-foot {
   border: 1px solid #e6e6e6 !important;
 }
 
+.card {
+  border: none !important;
+  box-shadow: none !important;
+}
+

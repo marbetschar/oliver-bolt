@@ -218,3 +218,14 @@ body > nav.navbar.has-background-black.is-fixed-bottom .navbar-menu::after {
   display: none !important;
 }
 
+<section class="hero has-background-black">
+  <div class="hero-body">
+    …
+  </div>
+
+  <div class="hero-foot">
+    <!-- HIER -->
+  </div>
+</section>
+
+

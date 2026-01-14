@@ -347,3 +347,11 @@ img {
   padding: 0 !important;
 }
 
+/* ===============================
+   ABOUT: Hintergrundbild temporär ausblenden
+   =============================== */
+
+.background-image-black-white-surfer-blurred {
+  background-image: none !important;
+}
+

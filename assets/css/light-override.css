@@ -313,3 +313,25 @@ img {
   border-color: #e6e6e6 !important;
   box-shadow: none !important;
 }
+
+/* ===============================
+   PICTURES: rechte Navigation (Making Of / Street / Action)
+   =============================== */
+
+/* Alle Links: schwarz, nicht blau */
+.hero-body ul li a {
+  color: #111111 !important;
+  font-weight: 400;           /* normal */
+  text-decoration: none;
+}
+
+/* Aktiver Link: fett */
+.hero-body ul li.is-active a {
+  font-weight: 700 !important;
+  color: #111111 !important;
+}
+
+/* Optional: Hover-State (dezent) */
+.hero-body ul li a:hover {
+  text-decoration: underline;
+}

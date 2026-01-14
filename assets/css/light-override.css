@@ -355,3 +355,16 @@ img {
   background-image: none !important;
 }
 
+/* ===============================
+   ABOUT: spezifischer Link nicht blau
+   =============================== */
+
+.hero-body h3 a {
+  color: #111111 !important;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.hero-body h3 a:hover {
+  text-decoration: underline;
+}

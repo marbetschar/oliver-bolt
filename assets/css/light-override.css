@@ -80,3 +80,15 @@ a {
 .navbar.has-background-black .navbar-dropdown .navbar-item {
   color: #111111 !important;
 }
+
+
+/* ===============================
+   MOVIES: schwarzer Block unter Filmen (hero-foot)
+   =============================== */
+
+.hero-foot {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border-top: 1px solid #e6e6e6; /* optional, damit es sauber aussieht */
+}
+

@@ -97,4 +97,8 @@ section.hero.has-background-black {
   background-color: #ffffff !important;
 }
 
+section.hero.has-background-black .hero-body,
+section.hero.has-background-black .hero-foot {
+  background-color: #ffffff !important;
+}
 

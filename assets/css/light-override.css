@@ -368,3 +368,67 @@ img {
 .hero-body h3 a:hover {
   text-decoration: underline;
 }
+
+/* =========================================================
+   MOBILE FIX (<= 768px)
+   Navbar + Social Icons + About Layout
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* ---------- NAVBAR: überall hell ---------- */
+  nav.navbar,
+  nav.navbar.has-background-black,
+  nav.navbar.has-background-dark,
+  nav.navbar.is-fixed-bottom {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    background-image: none !important;
+  }
+
+  /* Mobile-Menü & Dropdown */
+  nav.navbar .navbar-menu,
+  nav.navbar .navbar-dropdown {
+    background-color: #ffffff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Navbar-Links */
+  nav.navbar .navbar-item,
+  nav.navbar .navbar-link {
+    color: #111111 !important;
+    background-color: transparent !important;
+  }
+
+  /* Active / Hover */
+  nav.navbar .navbar-item.is-active,
+  nav.navbar .navbar-link.is-active,
+  nav.navbar .navbar-item:hover,
+  nav.navbar .navbar-link:hover {
+    background-color: #f2f2f2 !important;
+    color: #111111 !important;
+  }
+
+  /* Burger Icon sichtbar */
+  nav.navbar .navbar-burger span {
+    background-color: #111111 !important;
+  }
+
+  /* Schwarze Balken / Striche (Shadow / Border / Pseudo) entfernen */
+  nav.navbar,
+  nav.navbar * {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+
+  nav.navbar::before,
+  nav.navbar::after,
+  nav.navbar *::before,
+  nav.navbar *::after {
+    content: none !important;
+

@@ -102,3 +102,25 @@ section.hero.has-background-black .hero-foot {
   background-color: #ffffff !important;
 }
 
+/* ===============================
+   MOVIES: Film-Beschreibung (card-content) hell machen
+   =============================== */
+
+.card-content {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* Text innerhalb der Beschreibung */
+.card-content p,
+.card-content span,
+.card-content strong,
+.card-content em {
+  color: #111111 !important;
+}
+
+/* Optional: Rahmen sauber statt dunkel */
+.card {
+  border: 1px solid #e6e6e6 !important;
+}
+

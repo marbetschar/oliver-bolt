@@ -1,1 +1,36 @@
+/* ===============================
+   LIGHT MODE – FOR DUMMIES
+   =============================== */
+
+/* 1. Ganze Seite weiß + Text schwarz */
+html, body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 2. ALLE Texte schwarz */
+h1, h2, h3, h4, h5, h6,
+p, span, li, a, strong, em, small,
+label, blockquote, figcaption {
+  color: #000000 !important;
+}
+
+/* 3. ALLE Bereiche weiß (Header, Sections, Footer, etc.) */
+header, footer, main, section, article, nav, div {
+  background-color: #ffffff !important;
+}
+
+/* 4. Links normal blau (nicht Dark-Mode-blass) */
+a {
+  color: #0033cc !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 5. Linien & Rahmen sichtbar machen */
+hr {
+  border-color: #dddddd !important;
+}
 

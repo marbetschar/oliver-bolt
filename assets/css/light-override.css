@@ -246,3 +246,70 @@ body > nav.navbar.has-background-black.is-fixed-bottom .navbar-menu::after {
 .has-background-dark {
   background-color: #ffffff !important;
 }
+/* ===============================
+   PICTURES (making-of / street / action)
+   =============================== */
+
+/* 1) Alles, was Bulma als "dark" markiert, auf hell drehen */
+.has-background-black,
+.has-background-dark {
+  background-color: #ffffff !important;
+}
+
+/* 2) Typische Bulma "white text" Helfer zurück auf dunkel */
+.has-text-white,
+.has-text-light,
+.has-text-grey-lighter,
+.has-text-grey-light {
+  color: #111111 !important;
+}
+
+/* 3) Tabs (Making Of / Street / Action) sauber im Light Theme */
+.tabs,
+.tabs ul,
+.tabs a {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* Aktiver Tab: klare Markierung */
+.tabs li.is-active a {
+  color: #111111 !important;
+  border-bottom-color: #111111 !important; /* Unterstreichung */
+}
+
+/* Nicht aktive Tabs: dezente Linien */
+.tabs a {
+  border-bottom-color: #e6e6e6 !important;
+}
+
+/* 4) Galerie/Thumbnails: typische Container neutralisieren */
+.gallery,
+.grid,
+.masonry,
+.columns,
+.column,
+.section,
+.container,
+.content {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* 5) Bilder/Thumbnails: schwarze Boxen vermeiden */
+figure,
+figure.image,
+.image,
+img {
+  background-color: #ffffff !important;
+}
+
+/* 6) Falls Bilder in Bulma Cards gerendert sind */
+.card,
+.card-image,
+.card-content {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border-color: #e6e6e6 !important;
+  box-shadow: none !important;
+}

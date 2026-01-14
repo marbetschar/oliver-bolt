@@ -129,3 +129,22 @@ section.hero.has-background-black .hero-foot {
   box-shadow: none !important;
 }
 
+
+/* ===============================
+   FIXED BOTTOM NAVBAR: schwarze Linie oben entfernen
+   Selector: body > nav.navbar.has-background-black.is-fixed-bottom
+   =============================== */
+
+nav.navbar.is-fixed-bottom {
+  border-top: none !important;
+  box-shadow: none !important;
+}
+
+/* Falls die Linie über ein Pseudo-Element kommt */
+nav.navbar.is-fixed-bottom::before,
+nav.navbar.is-fixed-bottom::after {
+  content: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+

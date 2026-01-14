@@ -228,4 +228,9 @@ body > nav.navbar.has-background-black.is-fixed-bottom .navbar-menu::after {
   </div>
 </section>
 
+/* MOVIES: Bildbereich der Cards (schwarze Box) neutralisieren */
+.card-image {
+  background-color: #ffffff !important;
+}
+
 

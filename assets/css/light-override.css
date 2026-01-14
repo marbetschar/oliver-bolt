@@ -238,4 +238,11 @@ body > nav.navbar.has-background-black.is-fixed-bottom .navbar-menu::after {
   background-color: #ffffff !important;
 }
 
+/* ===============================
+   PICTURES: schwarze Bulma Hintergründe -> weiß
+   =============================== */
 
+.has-background-black,
+.has-background-dark {
+  background-color: #ffffff !important;
+}

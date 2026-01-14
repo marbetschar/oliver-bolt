@@ -395,3 +395,54 @@ img {
     color: #111111 !important;
   }
 }
+
+/* =========================================================
+   LIGHT NAVBAR (für weißes Site-Design)
+   Ziel: Keine schwarzen Menüs, keine unsichtbaren Links
+   Betroffen: nav.navbar.is-transparent.is-absolute
+   ========================================================= */
+
+/* 1) Navbar-Grundfläche: nicht mehr transparent */
+body > nav.navbar.is-transparent.is-absolute {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  box-shadow: 0 1px 0 #e6e6e6 !important; /* dezente Trennung */
+}
+
+/* 2) Alle Items/Links in der Navbar: dunkel, gut lesbar */
+body > nav.navbar.is-transparent.is-absolute .navbar-item,
+body > nav.navbar.is-transparent.is-absolute .navbar-link,
+body > nav.navbar.is-transparent.is-absolute a {
+  color: #111111 !important;
+}
+
+/* 3) Hover/Active: dezente Fläche statt Dark-Theme */
+body > nav.navbar.is-transparent.is-absolute .navbar-item:hover,
+body > nav.navbar.is-transparent.is-absolute .navbar-link:hover,
+body > nav.navbar.is-transparent.is-absolute .navbar-item.is-active,
+body > nav.navbar.is-transparent.is-absolute .navbar-link.is-active {
+  background-color: #f2f2f2 !important;
+  color: #111111 !important;
+}
+
+/* 4) Mobile Burger sichtbar */
+body > nav.navbar.is-transparent.is-absolute .navbar-burger span {
+  background-color: #111111 !important;
+}
+
+/* 5) Mobile Menü (aufklappbar): weiß statt schwarz */
+@media screen and (max-width: 768px) {
+  body > nav.navbar.is-transparent.is-absolute .navbar-menu,
+  body > nav.navbar.is-transparent.is-absolute .navbar-menu.is-active,
+  body > nav.navbar.is-transparent.is-absolute .navbar-dropdown {
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+
+  body > nav.navbar.is-transparent.is-absolute .navbar-item,
+  body > nav.navbar.is-transparent.is-absolute .navbar-link {
+    color: #111111 !important;
+    background-color: transparent !important;
+  }
+}

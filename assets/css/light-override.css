@@ -368,3 +368,30 @@ img {
 .hero-body h3 a:hover {
   text-decoration: underline;
 }
+
+
+/* MOBILE MENU: schwarzer Hintergrund im navbar-menu weg */
+@media screen and (max-width: 768px) {
+  .navbar-menu.is-hidden-desktop.is-flex-touch {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border-top: 0 !important;
+    color: #111111 !important;
+  }
+
+  .navbar-menu.is-hidden-desktop.is-flex-touch .navbar-item,
+  .navbar-menu.is-hidden-desktop.is-flex-touch .navbar-link,
+  .navbar-menu.is-hidden-desktop.is-flex-touch a {
+    color: #111111 !important;
+    background-color: transparent !important;
+  }
+
+  .navbar-menu.is-hidden-desktop.is-flex-touch .navbar-item:hover,
+  .navbar-menu.is-hidden-desktop.is-flex-touch .navbar-link:hover,
+  .navbar-menu.is-hidden-desktop.is-flex-touch .navbar-item.is-active,
+  .navbar-menu.is-hidden-desktop.is-flex-touch .navbar-link.is-active {
+    background-color: #f2f2f2 !important;
+    color: #111111 !important;
+  }
+}

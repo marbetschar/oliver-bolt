@@ -441,3 +441,12 @@ img {
     display: none !important;
   }
 }
+
+/* =========================================================
+   FINAL FIX: hero-foot Strich komplett entfernen
+   ========================================================= */
+
+.hero-foot {
+  display: none !important;
+}
+
